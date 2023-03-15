@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Navigate, NavLink, Route, Routes} from 'react-router-dom';
+import {Frame} from "./f1-porfolio/portfolioPart1/Frame";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/*  Navlink---чтобы изменился URL, и тогда переход произойдет
+        на компанету*/}
+        <div><NavLink to={'/frame'}>PorfolioPart1</NavLink></div>
+
+        <Routes>
+            <Route path="/" element={<h2>CSS</h2>}/>
+            <Route path="/frame" element={<Frame/>}/>
+
+
+            <Route path="/404" element={<h3>404: PAGE NOT FOUND</h3>}/>
+            <Route path="*" element={<Navigate to ="/404" />}/>
+        </Routes>
     </div>
   );
 }
