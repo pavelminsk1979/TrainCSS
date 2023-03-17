@@ -1,0 +1,32 @@
+.item {
+    width: 300px;
+    border: 1px solid #f9c94f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+
+
+    padding: 10px;  /*padding вместе с   box-sizing: border-box;   сохранил размер
+    контейнера внутри которого ЭЛЕМЕНТЫ и при этом у элементов появились отступы
+    от краев контейнера в котором они находятся ?вроде только к ТЕКСТУ БУДЕТ ОТНОСИТСЯ? */
+    box-sizing: border-box;
+}
+
+.img {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKHvWfM_KSUbG5p6m58by6Sd6W1T1GgvQURtATv-qHwVCvMRTEb0uy9l2ri4rXbHApTzY&usqp=CAU");
+    /* нашел картинку и СКОПИРОВАЛ URL АДРЕС КАРТИНКИ
+    свойство background-image   требует дополнительных настроек
+    иначе картинка может дублироватся в одной рамке или только одна часть (левая верхняя)
+    быть видна
+    */
+    background-size: cover;
+    /*это свойство   cover   чтоб картинка вошла вся...но есть разные
+       другие свойства */
+    background-position: center; /*этим свойством совмещается центр ВСТАВЛЕНОЙ КАРТИНКИ
+    с центром рамки в которую эту картинку поместил*/
+    height: 180px;
+    width: 220px;
+    margin-top: 10px;
+}
