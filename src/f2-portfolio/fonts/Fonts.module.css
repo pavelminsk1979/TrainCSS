@@ -1,0 +1,49 @@
+
+.page {
+    background-color: #9d2c2c;
+    min-height: 100vh;
+    /*высота  относительно экрана на котором смотрят.....
+       приставка    min     позволит блоку растянутся чтоб поместилось все что внутри
+        этого блока---ИНАЧЕ БУДут БЕССОВЕСТНО ВЫЛАЗИТЬ ЭЛЕМЕНТЫ из данного
+         блока и отрисовыватся в нижнем блоке(если нижний дудет канечно)*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin: 0 0 50px;
+    font-family: 'Rubik Iso', cursive;
+    color: #048755;
+    font-size: 38px;
+    font-weight: 900;
+    background-color: gold;
+    letter-spacing: 5px; /*растояние между буквами*/
+    position: relative;
+
+}
+
+.title h2 {
+    margin: 0;
+}
+
+.title::after {
+    content: '';
+    background: #041777;
+    position: absolute;
+    width: 160px;
+    height: 15px;
+    left:150px;
+    bottom: -30px;
+    left:50%;
+    transform: translate(-50%, 50%);
+}
+
+
+.frame {
+    width: 500px;
+    background-color: #d55858;
+    color: #adf28f;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-size: 24px;
+}

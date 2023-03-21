@@ -4,6 +4,8 @@ import {Frame} from "./f1-porfolio/portfolioPart1/Frame";
 import {Page} from "./f1-porfolio/portfolioPart1/page/Page";
 import st from './App.module.css'
 import {MedioQuestion} from "./f2-portfolio/MedioQuestion";
+import {Fonts} from "./f2-portfolio/fonts/Fonts";
+import {Picture} from "./f2-portfolio/picture/Picture";
 
 
 function App() {
@@ -16,8 +18,10 @@ function App() {
                     <div><NavLink to={'/frame'}><h5>1часть Разметка</h5></NavLink></div>
                     <div><NavLink to={'/page'}><h5>1часть Элементы на странице</h5></NavLink></div>
                 </div>
-                <div>
+                <div className={st.part2}>
                     <div><NavLink to={'/medioQuestion'}><h5>2часть МедиаЗапросы</h5></NavLink></div>
+                    <div><NavLink to={'/fonts'}><h5>2часть Шрифты и ПСЕВДОЭЛЕМЕНТЫ</h5></NavLink></div>
+                    <div><NavLink to={'/picture'}><h5>2часть Картинка</h5></NavLink></div>
                 </div>
             </div>
             <Routes>
@@ -25,6 +29,8 @@ function App() {
                 <Route path="/frame" element={<Frame/>}/>
                 <Route path="/page" element={<Page/>}/>
                 <Route path="/medioQuestion" element={<MedioQuestion/>}/>
+                <Route path="/fonts" element={<Fonts/>}/>
+                <Route path="/picture" element={<Picture/>}/>
 
 
                 <Route path="/404" element={<h3>404: PAGE NOT FOUND</h3>}/>
