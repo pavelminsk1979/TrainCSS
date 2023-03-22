@@ -5,7 +5,7 @@ import {Page} from "./f1-porfolio/portfolioPart1/page/Page";
 import st from './App.module.css'
 import {MedioQuestion} from "./f2-portfolio/MedioQuestion";
 import {Fonts} from "./f2-portfolio/fonts/Fonts";
-import {Picture} from "./f2-portfolio/picture/Picture";
+import {Pictures} from "./f2-portfolio/picture/Pictures";
 
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
                 <Route path="/page" element={<Page/>}/>
                 <Route path="/medioQuestion" element={<MedioQuestion/>}/>
                 <Route path="/fonts" element={<Fonts/>}/>
-                <Route path="/picture" element={<Picture/>}/>
+                <Route path="/picture" element={<Pictures/>}/>
 
 
                 <Route path="/404" element={<h3>404: PAGE NOT FOUND</h3>}/>

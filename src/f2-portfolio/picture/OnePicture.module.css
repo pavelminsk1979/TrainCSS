@@ -1,0 +1,29 @@
+.container {
+    border: 1px solid red;
+    height: 400px;
+    /*Если высота -ширина в процентах---ЭТО ЗНАЧИТ ЧТО ОТТАЛКИВАЕТСЯ
+   ВЫСОТА_ШИРИНА ОТ РОДИТЕЛЯ И ПОЭТОМУ НАДО СМОТРЕТЬ КАКАЯ
+   ВЫСОТА У РОДИТЕЛЯ*/
+    width: 400px;
+    margin-top: 40px;
+    background-size: cover;
+    /*чтобы картинку поместить втавить по максимуму в
+                            место под нее*/
+    background-position: center; /*чтоб картинку разместить по центру*/
+    background-size: 110%; /* размер картинки */
+    background-repeat: no-repeat; /*чтоб небыло повторов */
+    display: flex; /*это что кнопка которя внутри оказалась по центру картинки*/
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    background-color: gold;
+    border: 1px solid gold;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 20px 40px; /*тень снизу и справа от кнопки*/
+    cursor: pointer; /*когда навожу курсор на кнопку--появляется
+                    вместо курсора ПАЛЕЦ*/
+}
