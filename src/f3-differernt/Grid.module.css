@@ -1,0 +1,51 @@
+.container {
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+    /*сколькр элементов в одной строке
+       ФРАКЦИЯ--это еденица измерения в Гридах*/
+    grid-template-columns: repeat(4, 265px); /*можно так определить элементы*/
+    grid-template-rows:repeat(3, 200px);
+    /* grid-template-rows: 1fr 1fr 1fr;*/
+    gap: 25px; /*это отступы между элементами ПО ВСЕМ СТОРОНАМ*/
+    grid-template-areas:
+"one two three four"
+"five five six eight"
+"five five seven eight";
+
+}
+
+.child {
+    background-color: #9d2c2c;
+}
+
+.grid-child:first-child {
+    grid-area : one;
+}
+
+.child:nth-child(2) {
+    grid-area : two;
+}
+
+.child:nth-child(3) {
+    grid-area : three;
+}
+
+.child:nth-child(4) {
+    grid-area : four;
+}
+
+.child:nth-child(5) {
+    grid-area : five;
+}
+
+.child:nth-child(6) {
+    grid-area : six;
+}
+
+.child:nth-child(7) {
+    grid-area : seven;
+}
+
+.child:last-child {
+    grid-area : eight;
+}
