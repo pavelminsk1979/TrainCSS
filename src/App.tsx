@@ -8,6 +8,8 @@ import {Fonts} from "./f2-portfolio/fonts/Fonts";
 import {Pictures} from "./f2-portfolio/picture/Pictures";
 import {Grid} from "./f3-differernt/Grid";
 import {Card} from "./f3-differernt/fridayCards/Card";
+import {MessageOnMail} from "../src/f3-differernt/MessageOnMail";
+
 
 
 
@@ -29,6 +31,7 @@ function App() {
                 <div className={st.part3}>
                     <div><NavLink to={'/grid'}><h5>3часть GRID</h5></NavLink></div>
                     <div><NavLink to={'/card'}><h5>3часть 4 Урок проэкта КАРТОЧКИ</h5></NavLink></div>
+                    <div><NavLink to={'/messageOnMail'}><h5>Отправка сообщения на mail</h5></NavLink></div>
                 </div>
             </div>
             <Routes>
@@ -40,6 +43,7 @@ function App() {
                 <Route path="/picture" element={<Pictures/>}/>
                 <Route path="/grid" element={<Grid/>}/>
                 <Route path="/card" element={<Card/>}/>
+                <Route path="/messageOnMail" element={<MessageOnMail/>}/>
 
 
                 <Route path="/404" element={<h3>404: PAGE NOT FOUND</h3>}/>
