@@ -61,6 +61,7 @@ export const MessageOnMail = () => {
 
 
                             <button  type='submit'>ОТПРАВИТЬ</button>
+                            <button  >ТРЕНИРОВАЧНАЯ</button>
                         </form>
                 </div>
             </div>
