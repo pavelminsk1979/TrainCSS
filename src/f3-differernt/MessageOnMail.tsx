@@ -58,9 +58,6 @@ export const MessageOnMail = () => {
                                            placeholder={'Сообщение'}
                                            {...formik.getFieldProps('message')}/>
                             </label>
-
-<span>lkajlksjdflkj</span>
-<span>87585666565</span>
                             <button  type='submit'>ОТПРАВИТЬ</button>
                             <button  >ТРЕНИРОВАЧНАЯ</button>
                         </form>
