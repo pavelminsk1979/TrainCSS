@@ -59,6 +59,7 @@ export const MessageOnMail = () => {
                                            {...formik.getFieldProps('message')}/>
                             </label>
                             <button  type='submit'>ОТПРАВИТЬ</button>
+                            <div>KJJHL:KJLK:JLKJ:LKJKL::LKJL:KJL:KJ:JLKJLK</div>
                             <button  >ТРЕНИРОВАЧНАЯ</button>
                         </form>
                 </div>
